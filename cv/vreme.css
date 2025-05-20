@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  transition: background-color 0.5s;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+p {
+  font-weight: 700;
+  font-size: 72px;
+  text-align: center;
+  margin-top: 80px;
+}
+
+#dugme {
+  display: block;
+  width: fit-content;
+  margin: 40px auto;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.london {
+  background-color: #001f3f;
+  color: #ffffff;
+}
+
+body.london ul {
+  background-color: #003366;
+}
+
+body.london #dugme {
+  background-color: #0074D9;
+  color: white;
+}
+
+body.beograd {
+  background-color: #262626;
+  color: #ffffff;
+}
+
+body.beograd ul {
+  background-color: #3d3d3d;
+}
+
+body.beograd #dugme {
+  background-color: #ff4c4c;
+  color: white;
+}
+
+body.moskva {
+  background-color: #330000;
+  color: #ffffff;
+}
+
+body.moskva ul {
+  background-color: #660000;
+}
+
+body.moskva #dugme {
+  background-color: #cc0000;
+  color: white;
+}
+
+body.peking {
+  background-color: #002b36;
+  color: #ffffff;
+}
+
+body.peking ul {
+  background-color: #073642;
+}
+
+body.peking #dugme {
+  background-color: #268bd2;
+  color: white;
+}
+
+body.tokio {
+  background-color: #1a1a2e;
+  color: #ffffff;
+}
+
+body.tokio ul {
+  background-color: #16213e;
+}
+
+body.tokio #dugme {
+  background-color: #0f3460;
+  color: white;
+}
+
+body.la {
+  background-color: #fefbd8;
+  color: #333333;
+}
+
+body.la ul {
+  background-color: #f4e04d;
+}
+
+body.la #dugme {
+  background-color: #ffd700;
+  color: #000000;
+}
+
+body.nyc {
+  background-color: #001f3f;
+  color: #ffffff;
+}
+
+body.nyc ul {
+  background-color: #001233;
+}
+
+body.nyc #dugme {
+  background-color: #7FDBFF;
+  color: #000;
+}

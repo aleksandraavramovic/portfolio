@@ -1,0 +1,390 @@
+/* General Reset */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #84367d;
+    padding: 0 10px;
+}
+.text-background {
+    width: 100%; /* Širina elementa */
+    padding: 470px; /* Unutarnji razmak */
+    text-align: left; /* Centriraj tekst */
+    color: white; /* Bijela boja teksta za kontrast */
+    font-size: 60PX;
+    background: url('slika.jpg') no-repeat center center; /* Postavljanje slike */
+    background-size: cover; /* Slika pokriva cijeli element */
+    border-radius: 10px; /* Zaobljeni uglovi */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Dodavanje sjene */
+}
+
+header {
+    background: #84367d;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 30px;
+}
+
+nav ul li a {
+    font-size: 30px;
+    color: #c97ebc;
+    text-decoration: none;
+}
+
+main {
+    margin: 20px 0;
+}
+
+/* Games Section */
+#games {
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#games .game-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.game-card {
+    background: #d083ca;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    flex: 1 1 calc(30% - 20px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.game-card h3 {
+    margin-top: 0;
+    color: #84367d;
+}
+
+/* About Section */
+#about {
+    padding: 20px;
+    background:#d083ca;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+#tabela{
+    padding: 20px;
+    border: solid 3px;
+    color: #84367d;
+    background-color: #c97ebc;
+    border-color:#84367d;
+    border-radius: 3px;
+    border-collapse: collapse;
+
+}
+tr,th,td{
+    border: solid 2px;
+    border-color: #84367d;
+    
+}
+
+/* Contact Section */
+#contact {
+    padding: 20px;
+    background: #d083ca;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input, form textarea, form button {
+    width: 50%;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background:#84367d;
+    color: #ba5fb3;
+    cursor: pointer;
+    border: none;
+}
+
+form button:hover {
+    background: #84367d;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #84367d;
+    color: #fff;
+    margin-top: 20px;
+    border-radius: 5px;
+
+
+}
+.PC{
+    align-items: center;
+
+}
+.PS5{
+    align-items: center;
+}
+.XBOX{
+    align-items: center;
+}
+/* Card container */
+.card-container {
+    display: flex;
+    gap: 20px;
+}
+
+/* Flip card styles */
+.flip-card {
+    width: 200px;
+    height: 300px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Front and back styles */
+.flip-card-front, .flip-card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    display: flex;
+  
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Front side */
+.flip-card-front {
+    background-color: #ba5fb3;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Back side */
+.flip-card-back {
+    background-color: #ffffff;
+    color: #333;
+    font-size: 1rem;
+    padding: 20px;
+    text-align: center;
+    transform: rotateY(180deg);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.flip-card-front {
+    background-color:#ba5fb3;
+    color: #fff;
+}
+
+.flip-card-back {
+    background-color: #84367d;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+#tabela {
+    margin: 30px auto;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+#tabela th, #tabela td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+#tabela th {
+    background-color: #f4f4f4;
+}
+
+#tabela tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#tabela tr:hover {
+    background-color: #ddd;
+}
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+}
+section {
+    margin: 50px 0;
+    padding: 20px;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Centriraj tekst */
+    margin: 50px auto; /* Dodaj prostor iznad i ispod */
+    padding: 20px;
+    max-width: 800px; /* Ograniči širinu sadržaja */
+    border: 1px solid #ddd; /* Opcionalno: Dodaj okvir za vizuelno razgraničenje */
+    border-radius: 10px; /* Zaokruži ivice */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Dodaj blagu senku */
+    background-color: #ba5fb3; /* Svetla pozadina */
+}
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Centriraj tekst */
+    margin: 50px auto; /* Dodaj prostor iznad i ispod */
+    padding: 20px;
+    max-width: 800px; /* Ograniči širinu sadržaja */
+    border: 1px solid #ddd; /* Opcionalno: Dodaj okvir za vizuelno razgraničenje */
+    border-radius: 10px; /* Zaokruži ivice */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Dodaj blagu senku */
+    background-color: #f9f9f9; /* Svetla pozadina */
+}
+
+#contact form {
+    width: 100%; /* Podesi širinu forme */
+    max-width: 600px; /* Ograniči širinu forme */
+    margin-top: 20px; /* Dodaj razmak između naslova i forme */
+}
+
+#contact label {
+    display: block;
+    text-align: left; /* Poravnaj labele ulevo */
+    margin: 10px 0 5px;
+}
+
+#contact input, 
+#contact textarea {
+    width: 100%; /* Form elementi zauzimaju celu širinu */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#contact button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #ba5fb3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#contact button:hover {
+    background-color: #84367d;
+}
+

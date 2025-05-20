@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vreme</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="vreme.css">
+</head>
+<body onload="sati('beograd')">
+    <div class="container-fluid p-0">
+        <ul id="navbar" class="d-flex flex-wrap justify-content-center">
+            <li><a href="#london" onclick="sati('london')">London</a></li>
+            <li><a href="#beograd" onclick="sati('beograd')">Beograd</a></li>
+            <li><a href="#moskva" onclick="sati('moskva')">Moskva</a></li>
+            <li><a href="#peking" onclick="sati('peking')">Peking</a></li>
+            <li><a href="#tokio" onclick="sati('tokio')">Tokio</a></li>
+            <li><a href="#la" onclick="sati('la')">Los Anđeles</a></li>
+            <li><a href="#nyc" onclick="sati('nyc')">Nju Jork</a></li> 
+        </ul>
+        <p id="vreme"></p>
+        <a id="dugme" href="index.html">Nazad</a>
+    </div>
+    <script src="vreme.js"></script>
+</body>
+</html>

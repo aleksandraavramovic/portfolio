@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poker Duel</title>
+  <link rel="stylesheet" href="dr.css">
+</head>
+<body>
+  <h1>Poker Duel</h1>
+  <div class="input-section">
+    <input type="number" id="cardNumber" placeholder="Unesi broj karte (1-14)" min="1" max="14">
+    <select id="cardSuit">
+      <option value="srce">Srce</option>
+      <option value="kocka">Kocka</option>
+      <option value="list">List</option>
+      <option value="detelina">Detelina</option>
+    </select>
+    <br>
+    <button onclick="giveCard(1)">Daj kartu igraču 1</button>
+    <button onclick="giveCard(2)">Daj kartu igraču 2</button>
+  </div>
+
+  <div class="players-section">
+    <h2>Igrač 1</h2>
+    <div id="player1Cards"></div>
+    <h2>Igrač 2</h2>
+    <div id="player2Cards"></div>
+  </div>
+
+  <div class="result">
+    <button onclick="checkWinner()">Proveri pobednika</button>
+    <h2 id="winner"></h2>
+  </div>
+
+  <script src="dr.js"></script>
+</body>
+</html>
